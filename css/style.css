@@ -1,8 +1,34 @@
 /* google font link  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
 :root{
+    --primary-color: #3F87F5;
+    --secondary-color: #3E3E3E;
+    --para-color: #7E848C;
     --font-inter: 'Inter', sans-serif;
     --font-manrope: 'Manrope', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
+    --semibold-font: 500;
+    --bolder-font: 600;
+    --bold-font: 700;
+    --trans-delay: 300ms ease-in-out;
+
+}
+.nav_logo{
+    font-weight: var(--bold-font);
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--secondary-color);
+    font-family: var(--font-poppins);
+}
+.nav_link{
+    font-weight: var(--semibold-font);
+    transition: var(--trans-delay);
+}
+.active{
+    color: var(--primary-color)!important;
+
+}
+.nav_link:hover{
+    color: var(--primary-color)!important;
 }
