@@ -144,7 +144,8 @@ main{
 .mytoast{
     position: absolute;
     right: 10px;
-    top: 50%;
+
+    top: 200px;
     height: 42px;
     width: 263px!important;
     opacity: .9;
@@ -302,7 +303,31 @@ transition: var(--trans-delay);
     line-height: 50px;
     color: #0D0925;
 }
+.Collapse_header{
+    text-decoration: none;
+    color: var(--secondary-color)!important;
+    padding: 25px;
 
+}
+.Collapse_header h2{
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: var(--bolder-font);
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+.Collapse_header i{
+    font-size: 25px;
+}
+.collapse_text p{
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7E848C;
+    
+}
 
 
 
@@ -332,6 +357,11 @@ transition: var(--trans-delay);
     .slider_title{
         font-size: 24px;
         line-height: 36px;
+    }
+    .Collapse_header h2{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
     }
     
 }
