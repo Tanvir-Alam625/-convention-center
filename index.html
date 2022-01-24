@@ -59,7 +59,7 @@
                     <!-- <img src="./images/banner/banner.jpg" class="d-block w-100" alt="banner"> -->
                 <div class=" slider_caption d-block d-md-block">
                     <h5 class="slider_title">The perfect venue for your next event</h5>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                    <p class="slider_para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
                   <button class=" slider_btn btn bg-white  py-2 px-5 fw-bold">Book Now</button>
                   </div>
               </div>
@@ -67,7 +67,7 @@
                 <!-- <img src="./images/banner/banner.png" class="d-block w-100" alt="banner"> -->
                 <div class="slider_caption d-block d-md-block">
                   <h5 class="slider_title">The perfect venue for your next event</h5>
-                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                  <p class="slider_para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
                   <button class="btn bg-white  slider_btn py-2 px-5 fw-bold">Book Now</button>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                 <!-- <img src="./images/banner/banner (2).jpg" class="d-block w-100" alt="banner"> -->
                 <div class="slider_caption d-block d-md-block">
                   <h5 class="slider_title">The perfect venue for your next event</h5>
-                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
+                  <p class="slider_para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit </p>
                   <button class="btn bg-white  py-2 px-5 fw-bold slider_btn">Book Now</button>
                 </div>
               </div>
@@ -91,7 +91,38 @@
           </div>
     </header>
     <!-- start the main tags  -->
-    <main>
+    <main >
+      
+      
+      <!-- about us section -->
+      <section class="container my-5">
+        
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img class="img-fluid" src="./images/wedding.png" alt="wedding">
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <div class="about_items">
+              <h2 class="about_title">About Me</h2>
+              <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam cumque impedit iusto voluptatem corporis autem suscipit magnam. Ab vel magni nobis, quis illo sunt. Soluta, dicta adipisci? Cum, possimus!</p>
+              <a href="#" class=" about_btn ">About me<i class="fas ps-2  fa-arrow-right" ></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Toast tags  -->
+      <div class="toast mytoast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex align-items-center">
+          <a target="_blank" href="https://www.facebook.com/groups/webdevelopmentbatch5/announcements" class=" toast_link"  >
+            <div class="toast-body my_toast_body">
+              <i class="fas px-2 text-primary fa-gift"></i>
+              <span>20% off on next booking</span>
+            </div>
+          </a>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+      
        
 
     </main>
@@ -106,5 +137,14 @@
 
     <!-- bootstrap script tags  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+          
+      window.onload = (event) =>{
+          let myalert = document.querySelector(".toast");
+          let bsalert = new bootstrap.Toast(myalert);
+          bsalert.show();
+      }
+          
+    </script>
 </body>
 </html>

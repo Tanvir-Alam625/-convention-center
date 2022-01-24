@@ -15,6 +15,16 @@
     --trans-delay: 300ms ease-in-out;
 
 }
+.slider_para,
+.para{
+    font-family: var(--font-poppins);
+    font-weight: var(--bolder-font);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--para-color);
+    margin-bottom: 30px;
+    
+}
 /* header tags */
 /* nav tags  */
 .nav_logo{
@@ -71,8 +81,94 @@
     text-align: center;
     color: #FFFFFF;
 }
+.slider_para{
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
 .slider_btn{
     color: var(--primary-color)!important;
+}
+/* about me section tags  */
+main{
+    position: relative;
+}
+.about_title{
+    font-family:var(--font-poppins);
+    font-style: normal;
+    font-weight: var(--bold-font);
+    font-size: 38px;
+    line-height: 60px;
+    color: #0A0826;
+    position: relative;
+    display: inline;
+}
+.about_title::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    height: 7px;
+    width: 50px;
+    background-color: var(--primary-color);
+    border-radius: 0 20px 0 20px ;
+}
+.about_btn{
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: var(--bold-font);
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 10px 40px;
+    opacity: 1;
+    transition: var(--trans-delay);
+    
+}
+.about_btn i{
+    
+    font-style: normal;
+    font-weight: var(--bold-font);
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+.about_btn:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+.mytoast{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    height: 42px;
+    width: 263px!important;
+    opacity: .9;
+
+}
+.mytoast::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    left: 0;
+    background-color: var(--primary-color);
+
+}
+.mytoast:hover{
+    opacity: 1;
+}
+.toast_link{
+    text-decoration: none;
+    color:#505050;
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: var(--bolder-font);
+    font-size: 14px;
+    line-height: 24px;
 }
 
 
@@ -91,7 +187,11 @@
 /* responsive tags  */
 
 @media (max-width: 668px){
-
+    .nav_logo{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 33px;
+    }
     .slider_caption{
         color: #fff;
         padding: 1rem 0;
