@@ -179,12 +179,17 @@ main{
     transition: var(--trans-delay);
     position: relative;
 }
+.packge_item img{
+    overflow: hidden;
+    position: absolute;
+    right: -20%;
+}
 .packge_item:hover{
-    background-image: linear-gradient(rgba(13, 89, 255, 0.555), rgba(15, 127, 255, 0.425));
+    background-color: rgba(0, 79, 250, 0.897);
     background-size: cover;
     box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
     border-radius: 26px;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
 }
 .packge_item:hover.packge_item h2,
 .packge_item:hover.packge_item h3,
