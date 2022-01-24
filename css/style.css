@@ -328,6 +328,25 @@ transition: var(--trans-delay);
     color: #7E848C;
     
 }
+/* strat the footer tags  */
+footer{
+    height: 280px; 
+    width: 100vw;
+    background: #0B0D17;
+    padding: 56px 0;
+}
+.socials h2{
+    font-family: var(--font-manrope);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    font-feature-settings: 'liga' off;
+    color: #D9DBE1;
+}
+.socials h2,
+.social {
+    margin: 10px 0;
+}
 
 
 
