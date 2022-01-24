@@ -37,7 +37,7 @@
 }
 /* slider tags  */
 .bg_image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.753)),url("../images/banner/banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.87)),url("../images/banner/banner.jpg");
     height: calc(100vh - 100px);
     width: 100vh;
     background-size: cover;
@@ -49,7 +49,7 @@
     background-size: cover;
 }
 .bg_image2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.753)),url("../images/banner/banner\ \(2\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.877)),url("../images/banner/banner\ \(2\).jpg");
     height: calc(100vh - 100px);
     width: 100vh;
     background-size: cover;
@@ -88,20 +88,22 @@
 
 
 
+/* responsive tags  */
 
-@media (max-width: 778px) {
-    .bg_image2,
-    .bg_image1,
-    .bg_image{
-        height: calc(100vh - 2*100px)
-    }
+@media (max-width: 668px){
+
     .slider_caption{
-        bottom: 10%;
         color: #fff;
         padding: 1rem 0;
+        right: 15%;
+        left: 15%;
+        padding: 1rem 0;
+        bottom: 10%;
     }
+    
     .slider_title{
         font-size: 24px;
         line-height: 36px;
     }
+    
 }
